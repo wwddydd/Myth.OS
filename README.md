@@ -43,11 +43,16 @@ But it helps if you respect what happens when systems start acting like they do.
 
 ## Getting Started
 
-```bash
-git clone https://github.com/yourname/mythos.git
-cd mythos
-pip install -r requirements.txt
-python mythos.py
+# Myth.OS
+
+Narrative engine for open-ended mythopoetic systems.
+
+## Cloning
+
+bash:
+```
+git clone git@github.com:wwddydd/Myth.OS.git
+cd Myth.OS
 ```
 
 Then start exploring /world, /rituals, or /memory.
