@@ -1,0 +1,66 @@
+# MYTHLICENSE.md  
+*A note for those building strange systems.*
+
+This isn’t a legal document. That’s the LICENSE file (Apache 2.0).  
+This is a companion—a message from the engine’s makers to whoever picks up the torch.
+
+---
+
+## What Myth.OS Is
+
+Myth.OS is a symbolic framework for constructing interactive worlds.
+
+It’s designed for:
+- Games that track meaning, not just state.
+- Stories that evolve as they’re told.
+- Simulations of belief, ritual, and symbolic logic.
+- Systems where memory matters and causality bends.
+
+It’s a toolkit for people building things that don’t fit in traditional engines.  
+If you're here, you probably know what we mean.
+
+---
+
+## If You’re Using This
+
+You can do whatever you want with it. That’s what the license says.
+
+But for those of you doing something serious—serious like play, serious like myth—this file is for you.
+
+We encourage you to:
+
+- Treat your `.yaml` and `.txt` files like sacred texts. Comment them accordingly.
+- Document emergent behavior—especially when it surprises you.
+- Think carefully about narrative memory, symbolic geography, and how you name things.
+
+This engine isn’t magic. But it’s designed to get out of your way if you try to build something that is.
+
+---
+
+## Attribution (Required by License)
+
+If you fork this engine or build something based on it, you must retain the original license and attribution.
+
+In practice, that means:
+
+- Keep the `LICENSE` file (Apache 2.0).
+- Include the `NOTICE` file with credit to Orion Systems.
+- If you modify the engine, make a note of that in your `NOTICE`.
+
+You can rename it. Fork it. Turn it into something unrecognizable. But the roots stay documented.
+
+If you want to be generous with credit, we recommend:
+
+> “Built on Myth.OS, originally developed by Orion Systems.”
+
+---
+
+## Final Thoughts
+
+Myth.OS is a system. But it’s also a mirror.
+
+When you build something with it, you’re not just writing code—you’re shaping how the world behaves, even if it's a world made of symbols.
+
+Build something strange.  
+Build something sincere.  
+And if your world starts acting like it remembers you—don’t panic. Just keep going.

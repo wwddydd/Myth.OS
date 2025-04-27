@@ -1,0 +1,118 @@
+schema: location
+description: >
+  Defines a spatial or symbolic region within the world. Locations may function as
+  environments, anatomical nodes, mythic beings, or narrative thresholds. They may
+  contain other entities, shift states, or awaken under certain conditions.
+
+fields:
+  id:
+    type: string
+    description: Unique internal identifier. Use kebab-case (e.g. "port", "tundra-cabin").
+    required: true
+
+  name:
+    type: string
+    description: Display name for in-world references and player narration.
+    required: true
+
+  type:
+    type: string
+    description: Should always be "location".
+    required: true
+    enum: ["location"]
+
+  anatomy_role:
+    type: string
+    description: The symbolic or mythic organ this location represents in the world-body (e.g. mouth, gut, lens, lung).
+    required: false
+
+  system:
+    type: string
+    description: The metaphysical or symbolic system this location is part of (e.g. digestive, emotional, civic-neural).
+    required: false
+
+  function:
+    type: string
+    description: The role this place serves within the world, story, or player's mythic journey.
+    required: false
+
+  description:
+    type: string
+    description: A prose summary or poetic impression of the location’s nature.
+    required: false
+
+  appearance:
+    type: string
+    description: Initial visual or emotional impression when entering the location.
+    required: false
+
+  behavior:
+    type: list[string]
+    description: Patterns the location exhibits over time or under specific conditions.
+    required: false
+
+  entity_profile:
+    type: map
+    description: If the location is semi-sentient or functions as a being, define its traits here.
+    required: false
+    fields:
+      species:
+        type: string
+        description: What kind of mythic being or zone this is (e.g. Coastal Consumption Node).
+      awareness_level:
+        type: string
+        description: Sentience or perceptual acuity, optionally tied to cycles or stimuli.
+      hunger_cycles:
+        type: string
+        description: Rhythmic behaviors—what it consumes, and when.
+      dream_state:
+        type: string
+        description: What it dreams of, or how it behaves when not observed.
+      alignment:
+        type: string
+        description: Optional mythic alignment (e.g. Velth-leaning, Absurd-neutral).
+
+  connections:
+    type: list[string]
+    description: Other location IDs this place links to (may be spatial, symbolic, or emotional).
+    required: false
+
+  overlays:
+    type: list[string]
+    description: Alternate versions, temporal states, or layered interpretations of this location.
+    required: false
+
+  vexotra_overlays:
+   type: map
+   description: >
+    Defines how this entity changes in response to emotional tone vectors. Each key
+    is an emotional axis defined in vexotra.yaml. Thresholds determine when the
+    shift activates. Mythos uses the player's current vector to decide which overlays
+    apply and blends multiple if necessary.
+  required: false
+  pattern_properties:
+    "^[a-z_]+$":  # Match axis ids like sorrow, wrath, absurdity
+      type: map
+      fields:
+        threshold:
+          type: float
+          description: Minimum player value on this axis to activate overlay
+        description:
+          type: string
+          description: Emotional version of longform description
+        appearance:
+          type: string
+          description: Modified first-impression visual or sensory description
+        behavior_mods:
+          type: list[string]
+          description: Extra or altered behaviors activated at this tone
+        effects:
+          type: list[string]
+          description: Things triggered when this overlay is active (e.g. spawns, unlocks)
+        [*]:
+          type: any
+          description: Other fields may be contextually overridden or extended
+
+  [*]:
+    type: any
+    description: Additional context fields may be added freely. Mythos will interpret them as part of the living map.

@@ -1,0 +1,64 @@
+schema: vexotra
+description: >
+  A symbolic vector space of tone, emotion, and behavioral alignment. Vexotra is not
+  a layer but a mythic force field—each player moves through it based on their
+  choices, feelings, and symbolic residues. Locations, items, and beings shift their
+  presentation and behavior based on proximity to emotional poles.
+
+fields:
+  axes:
+    type: list[map]
+    description: >
+      The core emotional dimensions of Vexotra. These form the basis for mythic distance,
+      symbolic filtering, and perceptual transformation.
+    required: true
+    example:
+      - id: sorrow
+        label: Grief
+        description: Longing, loss, regret, nostalgia.
+      - id: awe
+        label: Awe
+        description: Sublime overwhelm, sacred terror, godlight.
+      - id: absurdity
+        label: Absurdity
+        description: Humor, chaos, whim, cartoon logic.
+      - id: wrath
+        label: Wrath
+        description: Vengeance, rage, reactive force.
+      - id: erotic
+        label: Eros
+        description: Desire, sensuality, merging.
+
+  modulation_thresholds:
+    type: map
+    description: >
+      Thresholds for when world elements begin to shift meaningfully in response
+      to emotional state.
+    required: false
+    example:
+      sorrow: 0.5
+      wrath: 0.6
+      absurdity: 0.4
+
+  default_player_vector:
+    type: map
+    description: The Vexotra coordinates for players entering the world without prior alignment.
+    required: false
+    example:
+      sorrow: 0.2
+      awe: 0.4
+      absurdity: 0.1
+
+  emotional_bleed:
+    type: boolean
+    description: >
+      If true, players can influence nearby players’ Vexotra vectors (useful for shared realities).
+    required: false
+    default: true
+
+  location_modulation_mode:
+    type: string
+    description: >
+      Determines how location descriptions shift (e.g. “hard phase”, “soft filter”, “compositional swap”).
+    required: false
+    enum: ["hard phase", "soft filter", "compositional swap"]

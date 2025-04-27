@@ -1,0 +1,24 @@
+anatomy_role: dermis
+appearance: "It flickers with bold colors, QR codes, hashtags, and vaguely familiar\
+   fonts. No one has seen its true shape,only impressions in the signage."
+behavior:
+- Reflects the dominant semiotic environment
+- Feeds on attention
+- Migrates when patterns decay
+- Territorial toward competing visual motifs
+description: A cryptic lifeform that evolved to resemble advertising. It does not
+  understand symbols, only that certain patterns draw attention. Some say it was born
+  from the recursive loops of spam filters and pop-ups. Others claim it was always
+  here, waiting for the city to catch up.
+entity_profile:
+  awareness_level: low
+  camouflage: perfectly blends with local adscape
+  diet: glances, curiosity, interrupted thoughts
+  species: Semiotic Mimic
+  vocalizations: pop music hooks, startup buzzwords, TikTok remix loops
+function: regulates surface-level perception and keeps urban attention flowing
+id: markovian-hypebeast
+location: sf/hypebeast-alley
+name: Markovian Hypebeast
+system: aesthetic-sensory
+type: creature

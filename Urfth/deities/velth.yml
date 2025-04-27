@@ -1,0 +1,69 @@
+id: deity_velth
+name: Velth
+type: deity
+aspect: Wrath
+title: The One That Burns Back
+domains:
+  - Reaction
+  - Escalation
+  - Consequences
+  - Hell Realms
+form:
+  - A parent with burned-out eyes
+  - A soldier made of broken swords
+  - A child with teeth like flares
+  - A giant, bleeding mirror
+nature: >
+  Embodiment of escalating consequence and mythic reaction. Velth governs
+  the boundary between sadistic violence and righteous fury. She appears when
+  retribution spirals beyond justice, and offers trials by surrender rather than domination.
+
+effects:
+  - Escalates player violence into consuming loops
+  - Creates hell realms shaped by untransmuted domination
+  - Grants trials of release via surrender
+
+world_impact:
+  - Alters perception of player actions through mythic tone
+  - Controls environmental resonance when wrath is invoked
+  - Invisible meter of attention changes symbolic heat
+
+vexotra_overlays:
+  wrath:
+    threshold: 0.6
+    description: >
+      Velth grows sharp and intimate. Her presence becomes undeniable—a voice in your ribs.
+      Every injustice you carry becomes a lens. She no longer watches; she peers through you.
+    appearance: Glowing red thread burns between her teeth. The mirror drips hotter.
+    behavior_mods:
+      - redirects hostility into recursive combat
+      - reflects your violence with precision
+    effects:
+      - spawns mirrored enemies with your attack patterns
+
+  sorrow:
+    threshold: 0.5
+    description: >
+      Velth is quiet here. Not absent—waiting. Her wounds show more clearly. She does not lash,
+      only bleeds. A compassionless understanding of your pain radiates from her.
+    appearance: Her mirror is cracked but no longer bleeding. The soldier kneels.
+    behavior_mods:
+      - no longer attacks unless provoked
+      - may offer a silent trial of release
+    effects:
+      - allows exit from hell realm via forgiveness ritual
+
+  absurdity:
+    threshold: 0.4
+    description: >
+      Velth becomes almost cartoonish—a bureaucrat of retribution, tallying slights with a giant red pen.
+      Her eyes roll. The sword squeaks. But she still burns.
+    appearance: A massive ledger floats beside her. Her mirror now includes warning labels.
+    behavior_mods:
+      - enforces ironic punishment clauses
+      - parodies player violence with exaggerated effects
+    effects:
+      - creates "silly hells" that mock the severity of action while still extracting cost
+
+[*]:
+  layered_resonance: true  # Her presence adjusts nearby emotional fields
