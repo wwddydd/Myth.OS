@@ -1,6 +1,7 @@
 # Urfth world files
 Urfth/
-
+#Working files
+docs/blueprint/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

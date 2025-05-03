@@ -1,0 +1,22 @@
+myth.os/
+└── urfth/
+    ├── eth.os/
+    │   ├── root.yml                  # World name, engine toggles, global IDs
+    │   ├── cosmology.yml             # Foundational narrative or symbolic model
+    │   ├── narrative_time.yml        # Tick rate, max stalling, time flow logic
+    │   ├── emotional_axes.yml        # Declared emotion vectors and modifiers
+    │   ├── vexotra_rules.yml         # Thresholds for summoning, mutation triggers
+    │   ├── player_progression.yml    # XP thresholds, embodiment rules, leveling paths
+    │   ├── onboarding.yml            # Ghost-state logic, entry rituals, body acquisition
+    │   ├── world_history.yml         # Canonical timeline or inherited scars
+    │   ├── impossible_entities.yml   # Forbidden or paradoxical symbolic beings
+    │   ├── glossary.yml              # Symbol definitions, metaphors, sacred terminology
+    │   ├── metabehavior.yml          # Instructions for LLM interpreter behavior
+    │   └── schemas/                  # All entity templates for world types
+    │       ├── thing.schema.yml
+    │       ├── location.schema.yml
+    │       ├── beast.schema.yml
+    │       └── deity.schema.yml
+    ├── world_state/                  # Mutable layer for live symbolic reality
+    ├── save/                         # Optional folder for session snapshots
+    └── logs/                         # Running transcript, symbolic diffs, etc.
