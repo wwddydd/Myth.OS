@@ -47,6 +47,8 @@ But it helps if you respect what happens when systems start acting like they do.
 
 Narrative engine for open-ended mythopoetic systems.
 
+As of 5/3/2025, Myth.OS is a structured design document and an empty framework.  To view progress and specification so far, check the /docs/ folder for 1.Philsophy, Purpose and Foundations, 2. Core Principles, and 3. Myth Engine.
+
 ## Cloning
 
 bash:
